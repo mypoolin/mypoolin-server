@@ -158,7 +158,7 @@ https://sdk.mypoolin.com/merchants_imps
 ### Check credit balance
 
 
-- Endpoint		-  /check_transaction_status
+- Endpoint		-  /get_balance
 - Request Type	- POST
 - Parameters - 
   1. order_id (Order id obtained from /request_imps_single request)
