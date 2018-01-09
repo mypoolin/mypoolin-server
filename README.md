@@ -2,25 +2,25 @@
 
 ## UPI Related calls
 
-- UPI Virtual Address validation
+- [UPI Virtual Address validation](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#upi-virtual-address-validation)
 
-- UPI Send (Single virtual address)
+- [UPI Send (Single virtual address)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#upi-send-single-virtual-address)
 
-- UPI Send Async (Single virtual address)
+- [UPI Send Async (Single virtual address)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#upi-send-async-single-virtual-address)
 
-- UPI Transaction Status
+- [UPI Transaction Status](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#upi-transaction-status)
 
-- Check credit balance
+- [Check credit balance](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#check-credit-balance)
 
 ## IMPS Related Calls
 
-- IMPS Send (Single virtual address)
+- [IMPS Send (Single Bank Account)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-send-single-bank-account)
 
-- IMPS Send Async (Single virtual address)
+- [IMPS Send Async (Single Bank Account)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-send-async-single-bank-account)
 
-- IMPS Transaction Status
+- [IMPS Transaction Status](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-transaction-status)
 
-- Check credit balance
+- [Check credit balance](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#check-credit-balance-1)
 
 
 ## General Information
@@ -108,7 +108,7 @@ https://sdk.mypoolin.com/merchants_imps
 ## IMPS Related calls
 
 
-### IMPS Send (Single virtual address)
+### IMPS Send (Single Bank Account)
 
 - Endpoint		- /request_imps_single
 - Request Type	- POST
@@ -123,7 +123,7 @@ https://sdk.mypoolin.com/merchants_imps
 `curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1'`
 
 
-### IMPS Send Async (Single virtual address)
+### IMPS Send Async (Single Bank Account)
 
 
 - Endpoint		- /request_imps_single_async
