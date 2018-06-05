@@ -1,4 +1,4 @@
-# mypoolin-server
+# wibmopay-server
 
 ## UPI Related calls
 
