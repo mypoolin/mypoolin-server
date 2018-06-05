@@ -168,4 +168,4 @@ https://sdk.mypoolin.com/merchants_imps
 `curl -X GET  https://sdk.mypoolin.com/merchants_imps/get_balance -H 'apikey: API_KEY'`
 
 
-For any queries, feel free to reach out to the developers on backend@mypoolin.com
+For any queries, feel free to reach out to the developers on backend@wibmopay.com
