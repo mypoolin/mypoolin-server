@@ -122,6 +122,28 @@ https://sdk.mypoolin.com/merchants_imps
 
 `curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1'`
 
+**_Sample Response_**
+
+Success (status code - 200)
+```Json
+{
+    "message": "success",
+    "mypoolin_commission": 5,
+    "other_commission": 0,
+    "requestNo": "IMPSI447I1538732879566IU",
+    "sent_amount": 1
+}
+```  
+Failed (status code - 400)
+```
+{
+    "message": "failed",
+    "mypoolin_commission": 0,
+    "other_commission": 0,
+    "requestNo": "IMPSI447I1538732757909IU",
+    "sent_amount": 1
+}
+```
 
 ### IMPS Send Async (Single Bank Account)
 
@@ -153,6 +175,40 @@ https://sdk.mypoolin.com/merchants_imps
 **_Sample Request_**
 
 `curl -X POST  https://sdk.mypoolin.com/merchants_imps/check_transaction_status  -H 'apikey: API_KEY' -F order_id=IMPSIMERI28I1510723520IU`
+
+**_Sample Response_**  
+Success (status code - 200)
+```Json
+{
+    "response": {
+        "order_id": "IMPSI447I1538732879566IU",
+        "transfer_amount": "1",
+        "transfer_bank_ref_no": "827815353604",
+        "transfer_currency": "INR",
+        "transfer_date": "2018-10-05T15:17:59",
+        "transfer_txn_status": "COMPLETED",
+        "transfer_type": "IMPS"
+    },
+    "status": "success"
+}
+```
+Failed (status code - 400)
+```
+{
+    "response": {
+        "order_id": "IMPSI447I1538732757909IU",
+        "transfer_amount": "",
+        "transfer_bank_ref_no": "",
+        "transfer_currency": "INR",
+        "transfer_date": "",
+        "transfer_txn_status": "Account Details Not Matching",
+        "transfer_type": "IMPS"
+    },
+    "status": "failed"
+}
+```
+
+
 
 
 ### Check credit balance
