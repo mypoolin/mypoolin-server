@@ -181,11 +181,10 @@ Success (status code - 200)
 ```Json
 {
     "response": {
-        "order_id": "IMPSI447I1538732879566IU",
-        "transfer_amount": "1",
-        "transfer_bank_ref_no": "827815353604",
-        "transfer_currency": "INR",
-        "transfer_date": "2018-10-05T15:17:59",
+        "mypoolin_commission": 5,
+        "order_id": "IMPSI447I1540974899279IU",
+        "transfer_amount": 1,
+        "transfer_bank_ref_no": "830414452718",
         "transfer_txn_status": "COMPLETED",
         "transfer_type": "IMPS"
     },
@@ -196,11 +195,10 @@ Failed (status code - 400)
 ```
 {
     "response": {
-        "order_id": "IMPSI447I1538732757909IU",
-        "transfer_amount": "",
+        "mypoolin_commission": 0,
+        "order_id": "IMPSI447I1540979902502IU",
+        "transfer_amount": 1,
         "transfer_bank_ref_no": "",
-        "transfer_currency": "INR",
-        "transfer_date": "",
         "transfer_txn_status": "Account Details Not Matching",
         "transfer_type": "IMPS"
     },
