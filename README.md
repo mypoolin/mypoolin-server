@@ -127,21 +127,23 @@ https://sdk.mypoolin.com/merchants_imps
 Success (status code - 200)
 ```Json
 {
-    "message": "success",
+    "message": "Transaction Successful",
     "mypoolin_commission": 5,
     "other_commission": 0,
-    "requestNo": "IMPSI447I1538732879566IU",
-    "sent_amount": 1
+    "requestNo": "IMPSI447I1540982809312IU",
+    "sent_amount": 1,
+    "status": "success"
 }
 ```  
 Failed (status code - 400)
 ```
 {
-    "message": "failed",
+    "message": "Account Details Not Matching",
     "mypoolin_commission": 0,
     "other_commission": 0,
-    "requestNo": "IMPSI447I1538732757909IU",
-    "sent_amount": 1
+    "requestNo": "IMPSI447I1540982781373IU",
+    "sent_amount": 1,
+    "status": "failed"
 }
 ```
 
