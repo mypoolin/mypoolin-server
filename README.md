@@ -66,6 +66,31 @@ https://sdk.mypoolin.com/merchants_imps
 `curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single -d "beneficiary_virtual_address=8800149537@upi" -d “beneficiary_amount=1” -H "apikey:API_KEY"
 `
 
+**_Sample Response_**
+
+Success (status code - 200)
+```Json
+{
+    "message": "Transaction Successful",
+    "mypoolin_commission": 3,
+    "order_id": "UPII447I1541153265190IU",
+    "other_commission": 0,
+    "sent_amount": 1,
+    "status": "success"
+}
+
+```  
+Failed (status code - 200)
+```
+{
+    "message": "Virtual Address Not Valid",
+    "mypoolin_commission": 0,
+    "order_id": "UPII447I1541154557275IU",
+    "other_commission": 0,
+    "sent_amount": 1,
+    "status": "failed"
+}
+```
 
 ### UPI Send Async (Single virtual address)
 
@@ -92,6 +117,51 @@ https://sdk.mypoolin.com/merchants_imps
 **_Sample Request_**
 
 `curl -X POST https://sdk.mypoolin.com/merchants_upi/check_transaction_status -H 'apikey: API_KEY' -d order_id=None1510559700IU`
+
+**_Sample Response_**  
+Success (status code - 200)
+```Json
+{
+    "response": {
+        "mypoolin_commission": 3,
+        "order_id": "UPII447I1541153265190IU",
+        "transfer_amount": 1,
+        "transfer_bank_ref_no": "830615315861",
+        "transfer_txn_status": "COMPLETED",
+        "transfer_type": "UPI"
+    },
+    "status": "success"
+}
+```
+Failed (status code - 200)
+```
+{
+    "response": {
+        "mypoolin_commission": 0,
+        "order_id": "UPII447I1541153752903IU",
+        "transfer_amount": 1,
+        "transfer_bank_ref_no": "",
+        "transfer_txn_status": "Virtual Address Not Valid",
+        "transfer_type": "UPI"
+    },
+    "status": "failed"
+}
+```
+
+Failed (status code - 400)
+```
+{
+    "response": {
+        "mypoolin_commission": 0,
+        "order_id": "UPII447I1541153265190I",
+        "transfer_amount": "",
+        "transfer_bank_ref_no": "",
+        "transfer_txn_status": "Order Id Not Found",
+        "transfer_type": "UPI"
+    },
+    "status": "failed"
+}
+```
 
 
 ### Check credit balance
@@ -135,7 +205,7 @@ Success (status code - 200)
     "status": "success"
 }
 ```  
-Failed (status code - 400)
+Failed (status code - 200)
 ```
 {
     "message": "Account Details Not Matching",
@@ -193,7 +263,7 @@ Success (status code - 200)
     "status": "success"
 }
 ```
-Failed (status code - 400)
+Failed (status code - 200)
 ```
 {
     "response": {
@@ -208,7 +278,20 @@ Failed (status code - 400)
 }
 ```
 
-
+Failed (status code - 400)
+```
+{
+    "response": {
+        "mypoolin_commission": 0,
+        "order_id": "IMPSI447I1541152208766I",
+        "transfer_amount": "",
+        "transfer_bank_ref_no": "",
+        "transfer_txn_status": "Order Id Not Found",
+        "transfer_type": "IMPS"
+    },
+    "status": "failed"
+}
+```
 
 
 ### Check credit balance
