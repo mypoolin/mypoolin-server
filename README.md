@@ -308,3 +308,7 @@ Failed (status code - 400)
 
 
 For any queries, feel free to reach out to the developers on backend@wibmopay.com
+
+
+**Documentation Last Updated - 30th October 2018**
+
