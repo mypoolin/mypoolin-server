@@ -92,6 +92,18 @@ Failed (status code - 200)
 }
 ```
 
+Pending (status code - 200)
+```
+{
+    "message": "Transaction Pending",
+    "mypoolin_commission": 0,
+    "order_id": "UPII1157I1542261163412IU",
+    "other_commission": 0,
+    "sent_amount": 1,
+    "status": "pending"
+}
+```
+
 ### UPI Send Async (Single virtual address)
 
 - Endpoint		- /request_upi_single_async
