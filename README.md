@@ -115,7 +115,7 @@ Pending (status code - 200)
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single_async -d "beneficiary_virtual_address=8800149537@upi" -d “beneficiary_amount=1” -H "apikey:API_KEY"`
+`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single_async -d "beneficiary_virtual_address=8800149537@upi" -d "beneficiary_amount=1" -H "apikey:API_KEY"`
 
 
 ### UPI Transaction Status
