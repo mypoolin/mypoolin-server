@@ -160,6 +160,21 @@ Failed (status code - 200)
 }
 ```
 
+Pending (status code - 200)
+```
+{
+    "response": {
+        "mypoolin_commission": 0,
+        "order_id": "UPII447I1541153752903IU",
+        "transfer_amount": 1,
+        "transfer_bank_ref_no": "",
+        "transfer_txn_status": "Transaction in pending state",
+        "transfer_type": "UPI"
+    },
+    "status": "pending"
+}
+```
+
 Failed (status code - 400)
 ```
 {
