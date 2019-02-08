@@ -59,6 +59,7 @@ https://sdk.mypoolin.com/merchants_imps
 - Parameters - 
   1. beneficiary_virtual_address (UPI Virtual Address of beneficiary to be validated)
   2. beneficiary_amount (Amount to be credited to the beneficiary)
+  3. comment (Message you want to send to user (only alphanumeric, max 15 characters))
 
 
 **_Sample Request_**
@@ -111,6 +112,7 @@ Pending (status code - 200)
 - Parameters - 
   1. beneficiary_virtual_address (UPI Virtual Address of beneficiary to be validated)
   2. beneficiary_amount (Amount to be credited to the beneficiary)
+  3. comment (Message you want to send to user (only alphanumeric, max 15 characters))
 
 
 **_Sample Request_**
@@ -213,6 +215,7 @@ Failed (status code - 400)
   1. beneficiary_account_number (Account number of the beneficiary)
   2. beneficiary_ifsc_code (IFSC Code of the bank branch associated with the account)
   3. beneficiary_amount (Amount to be credited to the beneficiary)
+  4. comment (Message you want to send to user (only alphanumeric, max 15 characters))
 
 
 **_Sample Request_**
@@ -255,6 +258,7 @@ Failed (status code - 200)
   1. beneficiary_account_number (Account number of the beneficiary)
   2. beneficiary_ifsc_code (IFSC Code of the bank branch associated with the account)
   3. beneficiary_amount (Amount to be credited to the beneficiary)
+  4. comment (Message you want to send to user (only alphanumeric, max 15 characters))
 
 
 **_Sample Request_**
