@@ -64,7 +64,7 @@ https://sdk.mypoolin.com/merchants_imps
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single -d "beneficiary_virtual_address=8800149537@upi" -d "beneficiary_amount=1" -H "apikey:API_KEY"
+`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single -d "beneficiary_virtual_address=8800149537@upi" -d "beneficiary_amount=1" -d "comment=Wibmo" -H "apikey:API_KEY"
 `
 
 **_Sample Response_**
@@ -117,7 +117,7 @@ Pending (status code - 200)
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single_async -d "beneficiary_virtual_address=8800149537@upi" -d "beneficiary_amount=1" -H "apikey:API_KEY"`
+`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single_async -d "beneficiary_virtual_address=8800149537@upi" -d "beneficiary_amount=1" -d "comment=Wibmo" -H "apikey:API_KEY"`
 
 
 ### UPI Transaction Status
@@ -220,7 +220,7 @@ Failed (status code - 400)
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1'`
+`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1' -F 'comment=Wibmo'`
 
 **_Sample Response_**
 
@@ -263,7 +263,7 @@ Failed (status code - 200)
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1'`
+`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1' -F 'comment=Wibmo'`
 
 
 
@@ -356,5 +356,5 @@ Failed (status code - 400)
 For any queries, feel free to reach out to the developers on backend@wibmopay.com
 
 
-**Documentation Last Updated - 30th October 2018**
+**Documentation Last Updated - 8th February 2019**
 
