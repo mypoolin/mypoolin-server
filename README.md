@@ -59,12 +59,13 @@ https://sdk.mypoolin.com/merchants_imps
 - Parameters - 
   1. beneficiary_virtual_address (UPI Virtual Address of beneficiary to be validated)
   2. beneficiary_amount (Amount to be credited to the beneficiary)
-  3. comment (Message you want to send to user (only alphanumeric, max 15 characters))
+  3. comment (Message you want to send to user (only alphanumeric, max 15 characters)) - optional
+  4. merchant_txn_id (Unique Merchant transaction id (only alphanumeric, max 30 characters)) - optional
 
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single -d "beneficiary_virtual_address=8800149537@upi" -d "beneficiary_amount=1" -d "comment=Wibmo" -H "apikey:API_KEY"
+`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single -d "beneficiary_virtual_address=wibmomerchant@yesbank" -d "beneficiary_amount=1" -d "comment=Wibmo" -d "merchant_txn_id=ABC123" -H "apikey:API_KEY"
 `
 
 **_Sample Response_**
@@ -112,12 +113,12 @@ Pending (status code - 200)
 - Parameters - 
   1. beneficiary_virtual_address (UPI Virtual Address of beneficiary to be validated)
   2. beneficiary_amount (Amount to be credited to the beneficiary)
-  3. comment (Message you want to send to user (only alphanumeric, max 15 characters))
-
+  3. comment (Message you want to send to user (only alphanumeric, max 15 characters)) - optional
+  4. merchant_txn_id (Unique Merchant transaction id (only alphanumeric, max 30 characters)) - optional
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single_async -d "beneficiary_virtual_address=8800149537@upi" -d "beneficiary_amount=1" -d "comment=Wibmo" -H "apikey:API_KEY"`
+`curl -X POST https://sdk.mypoolin.com/merchants_upi/request_upi_single_async -d "beneficiary_virtual_address=wibmomerchant@yesbank" -d "beneficiary_amount=1" -d "comment=Wibmo" -d "merchant_txn_id=ABC123" -H "apikey:API_KEY"`
 
 
 ### UPI Transaction Status
@@ -215,12 +216,13 @@ Failed (status code - 400)
   1. beneficiary_account_number (Account number of the beneficiary)
   2. beneficiary_ifsc_code (IFSC Code of the bank branch associated with the account)
   3. beneficiary_amount (Amount to be credited to the beneficiary)
-  4. comment (Message you want to send to user (only alphanumeric, max 15 characters))
+  4. comment (Message you want to send to user (only alphanumeric, max 15 characters)) - optional
+  5. merchant_txn_id (Unique Merchant transaction id (only alphanumeric, max 30 characters)) - optional
 
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1' -F 'comment=Wibmo'`
+`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Wibmo Pay' -F 'beneficiary_account_number=001661100000033' -F 'beneficiary_ifsc_code=YESB0000016' -F 'beneficiary_amount=1' -F 'comment=Wibmo' -F 'merchant_txn_id=ABC123'`
 
 **_Sample Response_**
 
@@ -259,11 +261,12 @@ Failed (status code - 200)
   2. beneficiary_ifsc_code (IFSC Code of the bank branch associated with the account)
   3. beneficiary_amount (Amount to be credited to the beneficiary)
   4. comment (Message you want to send to user (only alphanumeric, max 15 characters))
+  5. merchant_txn_id (Unique Merchant transaction id (only alphanumeric, max 30 characters)) - optional
 
 
 **_Sample Request_**
 
-`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single -H 'apikey: API_KEY' -F 'beneficiary_name=Shobhit Verma' -F 'beneficiary_account_number=8411566856' -F 'beneficiary_ifsc_code=KKBK0005029' -F 'beneficiary_amount=1' -F 'comment=Wibmo'`
+`curl -X POST https://sdk.mypoolin.com/merchants_imps/request_imps_single_async -H 'apikey: API_KEY' -F 'beneficiary_name=Wibmo Pay' -F 'beneficiary_account_number=001661100000033' -F 'beneficiary_ifsc_code=YESB0000016' -F 'beneficiary_amount=1' -F 'comment=Wibmo' -F 'merchant_txn_id=ABC123'`
 
 
 
