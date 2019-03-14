@@ -365,5 +365,7 @@ Please refer to this link - https://documenter.getpostman.com/view/4111011/S17ky
 
 
 
-**Documentation Last Updated - 14th March 2019 **
-** Two new parameters added comment and merchant_txn_id**
+**Documentation Last Updated - 14th March 2019**
+
+**Two new parameters added comment and merchant_txn_id**
+
