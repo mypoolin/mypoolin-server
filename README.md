@@ -1,4 +1,4 @@
-# wibmopay-server
+# For distributing/sending money via UPI/IMPS/NEFT. 
 
 ## UPI Related calls
 
