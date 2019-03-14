@@ -358,8 +358,12 @@ Failed (status code - 400)
 
 For any queries, feel free to reach out to the developers on backend@wibmopay.com
 
+
+
 ### For an exhaustive list of all possible status & error codes for all these APIs in all scenarios
 Please refer to this link - https://documenter.getpostman.com/view/4111011/S17kyArh
 
-**Documentation Last Updated - 14th March 2019**
-**Two new parameters added comment and merchant_txn_id**
+
+
+**Documentation Last Updated - 14th March 2019 **
+** Two new parameters added comment and merchant_txn_id**
