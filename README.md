@@ -14,6 +14,8 @@
 
 ## IMPS Related Calls
 
+- [IMPS Add Beneficiary](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-add-beneficiary)
+
 - [IMPS Send (Single Bank Account)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-send-single-bank-account)
 
 - [IMPS Send Async (Single Bank Account)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-send-async-single-bank-account)
@@ -208,6 +210,16 @@ Failed (status code - 400)
 ## IMPS Related calls
 
 
+### IMPS Add Beneficiary
+Add beneficiary before imps transfer to reduce transaction failure rate and response time of imps request APIs.
+- Endpoint		- /add_beneficiary
+- Request Type	- POST
+- Parameters -
+  1. account_number (Account number of the beneficiary)
+  2. ifsc_code (IFSC Code of the bank branch associated with the account)
+  3. merchant_username (Your merchant username)
+  
+
 ### IMPS Send (Single Bank Account)
 
 - Endpoint		- /request_imps_single
@@ -365,7 +377,7 @@ Please refer to this link - https://documenter.getpostman.com/view/4111011/S17ky
 
 
 
-**Documentation Last Updated - 14th March 2019**
+**Documentation Last Updated - 22nd April 2019**
 
 **All possible error & status codes list added**
 
