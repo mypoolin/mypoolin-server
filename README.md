@@ -289,6 +289,8 @@ Failed (status code - 200)
 - Request Type	- POST
 - Parameters - 
   1. order_id (Order id obtained from /request_imps_single request)
+                OR
+  2. merchant_txn_id (Your unique transaction id)
 
 **_Sample Request_**
 
