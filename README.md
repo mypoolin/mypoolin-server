@@ -16,6 +16,8 @@
 
 - [IMPS Add Beneficiary](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-add-beneficiary)
 
+- [IMPS Verify Beneficiary](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-verify-beneficiary)
+
 - [IMPS Send (Single Bank Account)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-send-single-bank-account)
 
 - [IMPS Send Async (Single Bank Account)](https://github.com/mypoolin/mypoolin-server/blob/master/README.md#imps-send-async-single-bank-account)
@@ -219,6 +221,16 @@ Add beneficiary before imps transfer to reduce transaction failure rate and resp
   2. ifsc_code (IFSC Code of the bank branch associated with the account)
   3. merchant_username (Your merchant username)
   
+  
+### IMPS Verify Beneficiary
+Verify beneficiary before initiating transfer request.
+- Endpoint		- /verify_beneficiary
+- Request Type	- POST
+- Parameters -
+  1. account_number (Account number of the beneficiary)
+  2. ifsc_code (IFSC Code of the bank branch associated with the account)
+  3. merchant_username (Your merchant username)
+
 
 ### IMPS Send (Single Bank Account)
 
